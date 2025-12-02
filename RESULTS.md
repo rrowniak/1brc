@@ -34,3 +34,24 @@ real    2m8,279s
 user    1m54,134s
 sys     0m13,933s
 ```
+
+## Zig simple optimizations
+- reserve capacity for hash map
+- enlarge reading buffer to 1MB
+- still no `perf` in use
+
+(ReleaseFast)
+```
+real    1m19,206s
+user    1m13,195s
+sys     0m2,407s
+```
+
+# Zig optimizations round 2
+- more efficient hash map usage (removed double lookup)
+
+```
+real    1m1,822s
+user    0m56,310s
+sys     0m2,047s
+```
