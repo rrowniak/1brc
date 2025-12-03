@@ -57,4 +57,13 @@ sys     0m2,047s
 ```
 
 ## Zig mmap
+- mmap instead of standard file reading
+- mmap didn't bring performance boost
 
+```
+real    1m13,412s
+user    1m0,376s
+sys     0m2,690s
+```
+
+## Zig optimizations round 3
