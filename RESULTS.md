@@ -47,7 +47,7 @@ user    1m13,195s
 sys     0m2,407s
 ```
 
-# Zig optimizations round 2
+## Zig optimizations round 2
 - more efficient hash map usage (removed double lookup)
 
 ```
@@ -55,3 +55,6 @@ real    1m1,822s
 user    0m56,310s
 sys     0m2,047s
 ```
+
+## Zig mmap
+
