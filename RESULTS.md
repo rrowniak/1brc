@@ -67,3 +67,14 @@ sys     0m2,690s
 ```
 
 ## Zig optimizations round 3
+- mmap reverted - no performance boost, should be investigated further
+- fast float parser written
+- slow takeDelimiterExclusive and splitScalar replaced by simd-based implementation 
+- `likely` hints added (gain about 5 seconds)
+
+```
+real    0m38,478s
+user    0m27,706s
+sys     0m3,029s
+
+```
