@@ -78,3 +78,6 @@ user    0m27,706s
 sys     0m3,029s
 
 ```
+
+## Zig optimizations hash map
+
