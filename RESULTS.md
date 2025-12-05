@@ -88,3 +88,19 @@ sys     0m3,029s
 - buffer 1 MB -> 4 MB: the most efficient choice
 - StringHashMap -> HashMapUnmanaged
 - further optimizations of the std.mem.eql (branch hints)
+
+```
+real    0m28,663s
+user    0m26,023s
+sys     0m1,969s
+
+```
+
+## Zig optimization over simd vector length
+- VEC_L changed from 64 to 32
+
+```
+real    0m25,378s
+user    0m22,565s
+sys     0m2,016s
+```
