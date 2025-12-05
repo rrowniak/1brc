@@ -5,6 +5,11 @@
 Memory: 16 GB
 CPU: Intel(R) Core(TM) i7-6820HQ CPU @ 2.70GHz 
 
+Set perf event paranoid to -1:
+```
+sudo sysctl kernel.perf_event_paranoid=-1
+```
+
 ## The provided Java naive example
 
 Repo: https://github.com/gunnarmorling/1brc 
@@ -80,4 +85,6 @@ sys     0m3,029s
 ```
 
 ## Zig optimizations hash map
-
+- buffer 1 MB -> 4 MB: the most efficient choice
+- StringHashMap -> HashMapUnmanaged
+- further optimizations of the std.mem.eql (branch hints)
